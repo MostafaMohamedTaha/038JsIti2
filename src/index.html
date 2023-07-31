@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+
+<body>
+
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!-- ((((((((((2 start date format)))))))))) -->
+    <div class="grid justify-center">
+        <button class="text-3xl capitalize rounded-3xl text-center px-5 py-3 m-3 bg-teal-700 text-white" id="date"
+            onclick="showDate()">get date format</button>
+    </div>
+    <hr>
+    <!-- ((((((((((2 end date format)))))))))) -->
+
+    <!-- ((((((((((3 start submit email)))))))))) -->
+    <div class="grid text-center justify-center align-middle">
+        <label for="email" class="m-3">please enter your email</label>
+        <input type="email" required id="email"
+            class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-r-lg border-l-gray-50 border-l-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-900 dark:border-l-gray-900  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500">
+        <button id="sumitEmail" class="text-3xl capitalize rounded-3xl text-center px-5 py-3 m-3 bg-teal-700 text-white"
+            onclick="submitEmail()">submit</button>
+        <div id="emailShow">.</div>
+    </div>
+    <hr>
+    <!-- ((((((((((3 end submit email)))))))))) -->
+
+    <!-- ((((((((((4 start check with regex email)))))))))) -->
+    <div class="grid justify-center">
+        <button id="emailCheck" class="text-3xl capitalize rounded-3xl text-center px-5 py-3 m-3 bg-teal-700 text-white"
+        onclick="emailCheck()">
+        Check Email
+    </button>
+    </div>
+    
+    <div class="text-3xl capitalize rounded-3xl text-center px-5 py-3 m-3 bg-teal-900 text-white" id="fullname">.</div>
+    <div class="text-3xl capitalize rounded-3xl text-center px-5 py-3 m-3 bg-teal-900 text-white" id="emailPrompt">.
+    </div>
+    <hr>
+    <!-- ((((((((((4 end check with regex email)))))))))) -->
+
+    <!-- ((((((((((5 start check with pattern attitude email)))))))))) -->
+    <form class="max-w-lg mx-auto grid justify-center">
+        <label for="user">username pattern attitude</label>
+        <input type="text" name="name"
+            pattern="[a-zA-Z]{3,}|[a-zA-Z]{3,}\s[a-zA-Z]{3,}|[a-zA-Z]{3,}\s[a-zA-Z]{3,}\s[a-zA-Z]{3,}"
+            class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-r-lg border-l-gray-50 border-l-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-900 dark:border-l-gray-900  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500">
+        <button class="text-3xl capitalize rounded-3xl text-center px-5 py-3 m-3 bg-teal-900 text-white" type="submit">
+            Check name pattern attitude
+        </button>
+    </form>
+    <hr>
+    <!-- ((((((((((6 start array of grade)))))))))) -->
+    <div class="grid justify-center">
+        <button id="emailCheck" class="text-3xl capitalize rounded-3xl text-center px-5 py-3 m-3 bg-teal-900 text-white"
+            onclick="studentGrade()">
+            Show Arrays
+        </button>
+    </div>
+    <div class="text-3xl capitalize rounded-3xl text-center px-5 py-3 m-3 bg-orange-900 text-white" id="sortedArray">.
+    </div>
+    <div class="text-3xl capitalize rounded-3xl text-center px-5 py-3 m-3 bg-orange-900 text-white" id="largestGrade">.
+    </div>
+    <div class="text-3xl capitalize rounded-3xl text-center px-5 py-3 m-3 bg-orange-900 text-white" id="lowestGrade">.
+    </div>
+    <hr>
+    <!-- ((((((((((6 end array of grade)))))))))) -->
+
+    <!-- ((((((((((7 start array of grade data)))))))))) -->
+    <button id="emailCheck" class="text-3xl capitalize rounded-3xl text-center px-5 py-3 m-3 bg-teal-900 text-white"
+        onclick="studentData()">
+        Show Arrays
+    </button>
+
+    <button id="emailCheck" class="text-3xl capitalize rounded-3xl text-center px-5 py-3 m-3 bg-teal-900 text-white"
+        onclick="popStudentData()">
+        Pop Student
+    </button>
+    <button id="emailCheck" class="text-3xl capitalize rounded-3xl text-center px-5 py-3 m-3 bg-teal-900 text-white"
+        onclick="addSpliceStudentData()">
+        splice Add Two Student
+    </button>
+    <button id="emailCheck" class="text-3xl capitalize rounded-3xl text-center px-5 py-3 m-3 bg-teal-900 text-white"
+        onclick="removeSpliceStudentData()">
+        splice Remove one Student
+    </button>
+    <div class="text-3xl capitalize rounded-3xl text-center px-5 py-3 m-3 bg-orange-900 text-white" id="bestStudent">.
+    </div>
+    <div class="text-3xl capitalize rounded-3xl text-center px-5 py-3 m-3 bg-orange-900 text-white" id="lowestStudent">.
+    </div>
+    <div class="text-3xl capitalize rounded-3xl text-center px-5 py-3 m-3 bg-orange-900 text-white" id="pushStudent">.
+    </div>
+    <div class="text-3xl capitalize rounded-3xl text-center px-5 py-3 m-3 bg-orange-900 text-white" id="popStudent">.
+    </div>
+    <div class="text-3xl capitalize rounded-3xl text-center px-5 py-3 m-3 bg-orange-900 text-white" id="sortStudent">.
+    </div>
+    <div class="text-3xl capitalize rounded-3xl text-center px-5 py-3 m-3 bg-blue-900 text-white" id="spliceAddStudent">
+        .
+    </div>
+    <div class="text-3xl capitalize rounded-3xl text-center px-5 py-3 m-3 bg-blue-900 text-white"
+        id="spliceRemoveStudent">.
+    </div>
+    <!-- ((((((((((7 end array of grade data)))))))))) -->
+    <hr>
+    <!-- ((((((((((8 start Date )))))))))) -->
+    <div class="grid justify-center">
+        <button id="emailCheck" class="text-3xl capitalize rounded-3xl text-center px-5 py-3 m-3 bg-teal-900 text-white"
+            onclick="birthDayShow()">
+            Enter Your Birthday Like (DD – MM – YYYY) ex. 22–01–1999 
+        </button>
+        <button id="emailCheck" class="text-3xl capitalize rounded-3xl text-center px-5 py-3 m-3 bg-teal-900 text-white"
+            onclick="editBirthDayShow()">
+            Edit Birthday 
+        </button>
+    </div>
+    <div class="text-3xl capitalize rounded-3xl text-center px-5 py-3 m-3 bg-orange-900 text-white" id="dateFormat">.
+    </div>
+    <div class="text-3xl capitalize rounded-3xl text-center px-5 py-3 m-3 bg-orange-900 text-white" id="editDateFormat">.
+    </div>
+    <!-- ((((((((((8 end Date )))))))))) -->
+    <!-- ((((((((((start 1 bonus get name of the day )))))))))) -->
+    <div class="grid justify-center">
+        <button id="emailCheck" class="text-3xl capitalize rounded-3xl text-center px-5 py-3 m-3 bg-teal-900 text-white"
+            onclick="getNameOfDay()">
+            get name of today
+        </button>
+    </div>
+    <div class="text-3xl capitalize rounded-3xl text-center px-5 py-3 m-3 bg-blue-900 text-white" id="nameOfDay">.
+    </div>
+    <!-- ((((((((((end 1 bonus get name of the day )))))))))) -->
+    <hr class="m-3">
+    <!-- ((((((((((start 2 mobile assignment )))))))))) -->
+    <div class="grid justify-center">
+        <button id="emailCheck" class="text-3xl capitalize rounded-3xl text-center px-5 py-3 m-3 bg-teal-900 text-white"
+            onclick="assignMobile()">
+            assign mobile number ^00201[0-2]{1}\d{8}$
+        </button>
+        <!-- pattern="^00201[0-2]\d+{8}" -->
+        <input type="tel" name="mobile" value="002" id="assignMobileInput"
+        class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-r-lg border-l-gray-50 border-l-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-900 dark:border-l-gray-900  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500">
+
+    </div>
+    <div class="text-3xl capitalize rounded-3xl text-center px-5 py-3 m-3 bg-blue-900 text-white" id="assignMobile">.
+    </div>
+    <!-- ((((((((((end 2 mobile assignment )))))))))) -->
+    <hr class="m-3">
+    <script src="main.js" async defer></script>
+</body>
+
+</html>
